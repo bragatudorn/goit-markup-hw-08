@@ -1,0 +1,34 @@
+
+.occupation {
+  padding-bottom: 94px;
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: initial;    
+  }
+}
+
+.occupation__item {
+    width: 370px;
+    position: relative;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+}
+
+.occupation__text {
+  position: absolute;
+  padding: 27px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(47, 48, 58, 0.8);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;  
+  color: #ffffff;
+}
+ 
+  

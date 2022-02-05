@@ -1,0 +1,21 @@
+.connect__tel-icon {
+    fill: currentColor;
+    margin-right: 10px;
+    width: 10px;
+    height: 16px;
+    align-items: center;
+  }
+  
+  .connect__email-icon {
+    fill: currentColor;
+    margin-right: 10px;
+    width: 16px;
+    height: 12px;
+    align-items: center;
+  }
+  
+  .connect__icon-item {
+    @extend %align-list;
+    justify-content: center;
+  } 
+  
