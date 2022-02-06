@@ -129,17 +129,16 @@
 }
 
 .menu-open-btn {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  width: 40px;
-  height: 40px;
-  border: 0;
-  background-color: transparent;
-  padding: 0;
+  min-height: 40px;
+  min-width: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: auto;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
 }
 
 .menu-open-btn:hover, .menu-open-btn:focus {
@@ -164,15 +163,17 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transition: transform 500ms;
 }
 
 .menu-close-btn {
   position: absolute;
-  top: 10px;
-  right: 15px;
+  top: 18px;
+  right: 26px;
   width: 40px;
   height: 40px;
-  border: 0;
+  border: none;
+  outline: none;
   background-color: transparent;
   padding: 0;
   display: flex;
@@ -365,6 +366,13 @@
   text-transform: uppercase;
   color: var(--body-text-color);
   margin-bottom: 10px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .about__title {
+    text-align: left;
+  }
 }
 
 .about__item {
@@ -1225,16 +1233,16 @@ body {
 @media screen and (min-width: 480px) {
   .modal {
     width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1);
   }
 }
 

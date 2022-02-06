@@ -28,6 +28,10 @@
     text-transform: uppercase;
     color: var(--body-text-color);
     margin-bottom: 10px;
+    text-align: center;
+    @media screen and (min-width: 768px) {
+      text-align: left;
+    }
   }
       
   .about__item {
