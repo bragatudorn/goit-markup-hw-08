@@ -17,40 +17,86 @@
 </head>
 <body>
     <!------------------ HEADER------------------->
-    <!-- <header class="header">
-       <div class="container header__container"> 
-        <a class="link" href="/"><span class="logo">Web</span><span class="header__logo">Studio</span></a> -->
-
-        <!------------------ Навигация на другие страницы -------------->
-        <!-- <nav class="site-nav">
-            <ul class="list site-list">
-                <li class="site-list__item">
-                    <a class="link site-list__link" href="index.html">Студия</a>
-                </li>
-                <li class="site-list__item">
-                    <a class="link current site-list__link" href="portofolio.html">Портфолио</a>
-                </li>
-                <li class="site-list__item">
-                    <a class="link site-list__link" href="#">Контакты</a>
-                </li>
-            </ul>            
-        </nav>
-        <ul class="list connect">
-            <li class="site-list__item">
-                <a class="link connect__tel connect__icon-item" href="info@devstudio.com">
-                    <svg class="connect__email-icon" width="16" height="12">
-                        <use href="./images/icons.svg#icon-email"></use>
-                    </svg>info@devstudio.com</a>
-            </li>
-            <li class="site-list__item">
-                <a class="link connect__tel connect__icon-item" href="tel:+380961111111">
-                    <svg class="connect__tel-icon" width="10" height="16">
-                        <use href="./images/icons.svg#icon-tel"></use>
-                    </svg> +38 096 111 11 11</a>
-            </li>
-        </ul>          
-      </div>
-    </header> -->
+    <header class="header">
+        <div class="container header__container"> 
+         <a class="link" href="/"><span class="logo">Web</span><span class="header__logo">Studio</span></a> 
+ 
+         <!------------------ Навигация на другие страницы -------------->
+          <nav class="site-nav">
+             <ul class="list site-list">
+                 <li class="site-list__item">
+                     <a class="link site-list__link" href="index.html">Студия</a>
+                 </li>
+                 <li class="site-list__item">
+                     <a class="link current site-list__link" href="portofolio.html">Портфолио</a>
+                 </li>
+                 <li class="site-list__item">
+                     <a class="link site-list__link" href="#">Контакты</a>
+                 </li>
+             </ul>            
+         </nav>
+         <ul class="list connect">
+             <li class="site-connect__item">
+                 <a class="link connect__tel connect__icon-item" href="info@devstudio.com">
+                     <svg class="connect__email-icon" width="16" height="12">
+                         <use href="./images/icons.svg#icon-email"></use>
+                     </svg>info@devstudio.com</a>
+             </li>
+             <li class="site-connect_item">
+                 <a class="link  connect__tel connect__icon-item" href="tel:+380961111111">
+                     <svg class="connect__tel-icon" width="10" height="16">
+                         <use href="./images/icons.svg#icon-tel"></use>
+                     </svg> +38 096 111 11 11</a>
+             </li>
+         </ul> 
+         <!-- mob menu -->
+         <button type="button" class="menu-open-btn" data-menu-open>
+             <svg id="icon-menu" width="40" height="40">
+                 <use href="./images/icons.svg#icon-menu"></use>
+             </svg>
+         </button>         
+       </div>
+     <div class="mob-menu is-hidden" data-menu>
+         <div class="mob-mob">
+             <button type="button" class="menu-close-btn" data-menu-close>
+             <svg class="icon-close" width="40" height="40">
+             <use href="./images/icons.svg#icon-close"></use>
+             </svg>        
+             </button>
+             <nav class="mob-nav">
+             <ul class="list mob-list">
+                 <li class="menu-list__item">
+                     <a class="link menu-list__link " href="index.html">Студия</a>
+                 </li>
+                 <li class="menu-list__item">
+                     <a class="link menu-list__link menu-current" href="portofolio.html">Портфолио</a>
+                 </li>
+                 <li class="menu-list__item">
+                     <a class="link menu-list__link" href="#">Контакты</a>
+                 </li>
+             </ul>            
+             </nav>
+         </div>
+         <div>
+             <ul class="list mob-connect">
+                 <li class="menu-list__item">
+                     <a class="link  mob-connect__tel mob-connect__icon-item" href="tel:+380961111111">
+                         +38 096 111 11 11</a>
+                 </li>
+                 <li class="menu-list__item">
+                     <a class="link mob-connect__mail mob-connect__icon-item" href="info@devstudio.com">
+                     info@devstudio.com</a>
+                 </li>
+             </ul>
+             <ul class="list mob-socials">
+                 <li class="mob-socials-item1"><a class="link mob-socials-item" href="#">Instagram</a></li>                
+                 <li class="mob-socials-item1"><a class="link mob-socials-item" href="#">Twitter</a></li>
+                 <li class="mob-socials-item1"><a class="link mob-socials-item" href="#">Facebook</a></li>
+                 <li class="mob-socials-item1"><a class="link mob-socials-item" href="#">LinkedIn</a></li>
+             </ul>
+         </div>
+     </div>
+     </header>
         <main>
             <section class="section">
                 <div class="container">
@@ -74,7 +120,8 @@
                     <ul class="list portfolio-list ">
                         <li class="portofolio-item">
                             <div class="portofolio-item-wrap">
-                                <img src="./images/portofolio1.jpg" alt="фото веб-сайта Технокряк" width="370px">
+                                <img srcset="./images/portofolio1.jpg 1x, ./images/port1-2x.jpg 2x"
+                                    src="./images/portofolio1.jpg" alt="фото веб-сайта Технокряк" width="370px">
                                 <p class="portofolio-img-text">Технокряк это современная площадка распространения коронавируса.
                                     Компании используют эту платформу для цифрового
                                     шпионажа и атак на защищённые сервера конкурентов.
@@ -87,7 +134,8 @@
                         </li>
                         <li class="portofolio-item">
                             <div class="portofolio-item-wrap">
-                                <img src="./images/portofolio2.jpg" alt="фото постера New Orlean vs Golden Star" width="370">
+                                <img srcset="./images/portofolio2.jpg 1x, ./images/port2-2x.jpg 2x"
+                                    src="./images/portofolio2.jpg" alt="фото постера New Orlean vs Golden Star" width="370">
                                 <p class="portofolio-img-text">Постер New Orlean vs Golden Star</p>
                             </div>
                             <div class="portofolio-pad">
@@ -97,7 +145,8 @@
                         </li>
                         <li class="portofolio-item">
                             <div class="portofolio-item-wrap">
-                                <img src="./images/portofolio3.jpg" alt="фото логотипа Ресторана" width="370">
+                                <img srcset="./images/portofolio3.jpg 1x, ./images/port3-2x.jpg 2x"
+                                    src="./images/portofolio3.jpg" alt="фото логотипа Ресторана" width="370">
                                 <p class="portofolio-img-text">Ресторан Seafood</p>
                             </div>
                             <div class="portofolio-pad">
@@ -107,7 +156,8 @@
                         </li>
                         <li class="portofolio-item">
                             <div class="portofolio-item-wrap">
-                                <img src="./images/portofolio4.jpg" alt="фото наушников" width="370">
+                                <img srcset="./images/portofolio4.jpg 1x, ./images/port4-2x.jpg 2x"
+                                    src="./images/portofolio4.jpg" alt="фото наушников" width="370">
                                 <p class="portofolio-img-text">Проект Prime</p>
                             </div>
                             <div class="portofolio-pad">
@@ -117,7 +167,8 @@
                         </li>
                         <li class="portofolio-item">
                             <div class="portofolio-item-wrap">
-                                <img src="./images/portofolio5.jpg" alt="фото коробочек" width="370">
+                                <img srcset="./images/portofolio5.jpg 1x, ./images/port5-2x.jpg 2x"
+                                    src="./images/portofolio5.jpg" alt="фото коробочек" width="370">
                                 <p class="portofolio-img-text">Проект Boxes</p>
                             </div>
                             <div class="portofolio-pad">
@@ -127,7 +178,8 @@
                         </li>
                         <li class="portofolio-item">
                             <div class="portofolio-item-wrap">
-                                <img src="./images/portofolio6.jpg" alt="фото веб-сайта" width="370">
+                                <img srcset="./images/portofolio6.jpg 1x, ./images/port6-2x.jpg 2x"
+                                    src="./images/portofolio6.jpg" alt="фото веб-сайта" width="370">
                                 <p class="portofolio-img-text">Inspiration has no Borders</p>
                             </div>
                             <div class="portofolio-pad">
@@ -137,7 +189,8 @@
                         </li>
                         <li class="portofolio-item">
                             <div class="portofolio-item-wrap">
-                                <img src="./images/portofolio7.jpg" alt="фото журнала" width="370">
+                                <img srcset="./images/portofolio7.jpg 1x, ./images/port7-2x.jpg 2x"
+                                    src="./images/portofolio7.jpg" alt="фото журнала" width="370">
                                 <p class="portofolio-img-text">Издание Limited Edition</p>
                             </div>
                             <div class="portofolio-pad">
@@ -147,7 +200,8 @@
                         </li>
                         <li class="portofolio-item">
                             <div class="portofolio-item-wrap">
-                                <img src="./images/portofolio8.jpg" alt="фото логотипа проекта" width="370">
+                                <img srcset="./images/portofolio8.jpg 1x, ./images/port8-2x.jpg 2x"
+                                    src="./images/portofolio8.jpg" alt="фото логотипа проекта" width="370">
                                 <p class="portofolio-img-text">Проект LAB</p>
                             </div>
                             <div class="portofolio-pad">
@@ -157,7 +211,8 @@
                         </li>
                         <li class="portofolio-item">
                             <div class="portofolio-item-wrap">
-                                <img src="./images/portofolio9.jpg" alt="фото печатуйших рук на нотбуке" width="370">
+                                <img srcset="./images/portofolio9.jpg 1x, ./images/port9-2x.jpg 2x"
+                                    src="./images/portofolio9.jpg" alt="фото печатуйших рук на нотбуке" width="370">
                                 <p class="portofolio-img-text">Growing Business</p>
                             </div>
                             <div class="portofolio-pad">
@@ -242,5 +297,6 @@
                     </div>        
                 </div>
             </footer>
+        <script src="./js/menu.js"></script>
 </body>
 </html>
