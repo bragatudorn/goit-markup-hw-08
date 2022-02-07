@@ -26,22 +26,22 @@
 
 .header {
   background: var(--primary-white-color);
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border-bottom: 1px solid #ececec;
 }
 
 @media screen and (min-width: 768px) {
   .header {
-    padding-top: 21px;
-    padding-bottom: 21px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .header {
     padding-top: 24px;
-    padding-bottom: 25px;
+    padding-bottom: 24px;
   }
 }
 
@@ -129,6 +129,7 @@
 }
 
 .menu-open-btn {
+  padding: 0;
   min-height: 40px;
   min-width: 40px;
   display: flex;
@@ -168,8 +169,8 @@
 
 .menu-close-btn {
   position: absolute;
-  top: 18px;
-  right: 26px;
+  top: 10px;
+  right: 15px;
   width: 40px;
   height: 40px;
   border: none;
@@ -1139,7 +1140,12 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--body-text-color);
-  margin-right: 93px;
+}
+
+@media screen and (min-width: 768px) {
+  .header__logo {
+    margin-right: 93px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1193,7 +1199,7 @@ body {
   position: absolute;
   background-color: var(--accent-color);
   left: 0;
-  bottom: -33px;
+  bottom: -32px;
 }
 
 .menu-current {
