@@ -121,6 +121,7 @@
     flex-direction: column;
     justify-content: space-between;
     transition: transform 500ms; 
+    
   } 
 
   .menu-close-btn{ 
@@ -185,6 +186,7 @@
 
   .mob-socials{    
     display: flex;
+    flex-wrap: wrap;
   }
 
 .mob-socials-item{  
@@ -194,10 +196,7 @@
   line-height: 1.22;  
   letter-spacing: 0.02em;
   color: #2196F3;  
-  &:not(:last-child){
-  margin-right: 10px;
-  padding-right: 10px;
-  border-right: 1px solid rgba(33,33,33,0.2);}
+  
 }  
 .mob-socials-item1:not(:last-child) {  
   margin-right: 10px;
