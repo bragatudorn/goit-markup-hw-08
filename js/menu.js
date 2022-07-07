@@ -12,4 +12,3 @@
       refs.menu.classList.toggle("is-hidden");
     }
   })();
-  
