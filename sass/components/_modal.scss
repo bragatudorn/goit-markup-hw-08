@@ -41,8 +41,8 @@
     right: 8px;
     color: #000000;
     padding: 0;
-    transition: background-color 250ms linear, color 250ms linear;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms var(--cubic), color 250ms var(--cubic);
+     
     fill: currentColor;
     &:hover,
     &:focus {

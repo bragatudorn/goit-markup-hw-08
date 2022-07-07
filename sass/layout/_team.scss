@@ -76,8 +76,8 @@
     align-items: center;
     border-radius: 50%;
     color: #afb1b8;
-    transition: background-color 250ms linear, color 250ms linear;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms var(--cubic), color 250ms var(--cubic);
+     
   }
   /*
   .team__social-icon:hover,

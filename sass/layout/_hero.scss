@@ -69,8 +69,8 @@
     margin: 0 auto;
     border-width: 0;
     border-radius: 4px;
-    transition: background-color 250ms linear, color 250ms linear;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms var(--cubic), color 250ms var(--cubic);
+     
     &:hover {
       background-color: #188ce8;
     }

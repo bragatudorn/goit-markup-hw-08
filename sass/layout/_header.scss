@@ -48,8 +48,8 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--body-text-color);
-    transition: color 250ms linear;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms var(--cubic);
+     
     &:hover,
     &:focus {
       color: var(--accent-color);
@@ -74,8 +74,8 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--discription-color);
-    transition: color 250ms linear;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms var(--cubic);
+     
     &:hover,
     &:focus {
       color: var(--accent-color);      
@@ -151,8 +151,8 @@
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--body-text-color);
-    transition: color 250ms linear;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms var(--cubic);
+     
     &:hover,
     &:focus {      
       color: var(--accent-color);
